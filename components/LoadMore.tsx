@@ -6,14 +6,17 @@ import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import AnimeCard, { AnimeProp } from './AnimeCard';
 
-function LoadMore() {
+let page = 2;
+
+const LoadMore = () => {
   const { ref, inView } = useInView();
   const [data, setData] = useState<AnimeProp[]>([]);
 
   useEffect(() => {
     if (inView) {
-      fetchAnime(2).then((res) => {
+      fetchAnime(page).then((res) => {
         setData([...data, ...res]);
+        page++;
       });
     }
   }, [inView, data]);
@@ -32,6 +35,6 @@ function LoadMore() {
       </section>
     </>
   );
-}
+};
 
 export default LoadMore;
