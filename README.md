@@ -1,4 +1,4 @@
-## Server Actions
+## Next 14 Server Actions
 
 In Next.js client components, fetching from client to server should be written as follows...
 
@@ -54,28 +54,35 @@ export default function App() {
 }
 ```
 
-Offloading the burden of processing client data has some advantages.
+## Anime Vault
 
-- Pages will load faster
-- They'll respond better
-- Search engines will favor them
+A modern Next 14 server side Japanese anime list app with server actions, inifinite scroll & framer motion animations.
 
-It will further improve...
+![anime-vault01](https://github.com/Bear29ers/anime-vault/assets/39920490/090b0dc5-679e-40e7-a167-6f5afb0001f8)
 
-- Core Web Vitals
-- Crawl budget
-- Crawl ranking
+![anime-vault02](https://github.com/Bear29ers/anime-vault/assets/39920490/80f048e6-590b-4d45-a273-89a3fa7f6857)
 
-Ultimatelly, the user experience.
+[Deployed App](https://anime-vault-nine-psi.vercel.app/)
 
-# Build Modern Next 14 Server Side App with Server Actions, Infinite Scroll & Framer Motion Animations
+### Prerequisite
 
-![Anime Website](https://i.ibb.co/MG1nbqt/YT-Thumbnails-2.png)
+- Node.js 18.17.0 or later
+- A basic understanding of JavaScript and React
 
-### [🌟 Become a top 1% Next.js 14 developer in only one course](https://jsmastery.pro/next14)
+### Cloning the repository
 
-### [🚀 Land your dream programming job in 6 months](https://jsmastery.pro/masterclass)
+```bash
+git clone https://github.com/Bear29ers/anime-vault.git
+```
 
-### [📙 Free Three.js Cheatsheet](https://resource.jsmastery.pro/threejs-cheatsheet)
+### Install packages
 
-### [🌐 Best Hosting for Your Websites](https://hostinger.com/javascript10)
+```bash
+npm install
+```
+
+### Start the app
+
+```bash
+npm run dev
+```
